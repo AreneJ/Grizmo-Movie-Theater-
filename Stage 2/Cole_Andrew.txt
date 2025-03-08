@@ -1,0 +1,13 @@
+  In Stage 2, I prepared CRC cards as suggested in Chapter 12 of our text. I 
+used these cards and other techniques suggested in the same chapter to build
+rough draft UML diagrams.
+  For example, I determined the Screen class has a dependency relationship
+with the Seating class. Chapter 12 uses an analogy of a cash register 
+'knowing about' coins. But, the coins do not 'know about' the cash register -
+they could be in a pocket or lying elsewhere. In the same way, our screens
+will know about their seating, while the seating is largely just a 2D array
+without 'knowledge' of the screen.
+  I also communicated to the team what I'd learned in the feedback for
+Stage 1 to assist building the classes more fully in Stage 2. My teammate has
+taken on the primary role in this stage, and should be credited with the UML 
+diagram.
