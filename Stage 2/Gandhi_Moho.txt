@@ -1,2 +1,3 @@
 In Stage 2, I wrote most of the UML graph displayed in the drop box and with my teammate's help reworked some classes in the project in response to our other teammate dropping out. I believe there are probably more places to have more inheritance rather than just the ticket purchasing and concession purchases inheriting the general purchase class.
 Maybe expanding the staff by having varied staff designation that can do different tasks like manager or maintenance members.  
+My teammate helped alot with focusing down the ideas we had for moving forward in making the UML diagram and where we wanted to go with it.  
