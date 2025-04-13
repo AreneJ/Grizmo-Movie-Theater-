@@ -1,4 +1,4 @@
-The Screen, ScreenManager, Seating, Showtime, ShowtimeManager, Staff, 
+The MovieStorageManager, Screen, ScreenManager, Seating, Showtime, ShowtimeManager, Staff, 
 StaffManager, Ticket and TicketParser classes were created by myself. I also
 created the CLI 'command-line interface' class for menu/submenu navigation 
 and appropriate method calls. 
