@@ -1,13 +1,20 @@
 
 /**
  * This class describes Staff objects, which represent employees. Staff objects
- * have names and ages.
+ * have names and ages which can be modified.
+ * 
  * @author Andrew
  */
 public class Staff {
     private String staffName;
     private int staffAge;
     
+    /**
+     * Constructor accepts a String an integer, assigning them to the Staff
+     * object's staffName and staffAge respectively.
+     * @param name
+     * @param age 
+     */
     Staff (String name, int age) {
         this.staffName = name;
         this.staffAge = age;
