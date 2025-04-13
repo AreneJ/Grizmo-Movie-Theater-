@@ -3,7 +3,11 @@ import java.util.Scanner;
 
 /**
  * This class manages Showtime objects. It places Showtime objects into
- * a 2D array
+ * a 2D array, with rows corresponding to the hour of a Showtime object and
+ * columns corresponding to the day.
+ * It can accommodate up to three Showtime objects per weekday, for a total
+ * of 15 maximum Showtime objects.
+ * 
  * @author Andrew
  */
 public class ShowtimeManager {
@@ -188,9 +192,13 @@ public class ShowtimeManager {
         }
     }
     
+    /**
+     * @param i the row or 'time of day' of desired Showtime object
+     * @param j the column or 'day of week' of desired Showtime object
+     * @return the Showtime object associated with [i][j] parameters
+     */
     public Showtime getShowtime(int i, int j) {
         return showtimes[i][j];
     }
-    
-    
+  
 }
