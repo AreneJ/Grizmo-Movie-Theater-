@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 /**
  * This class interacts with the CLI to allow manipulation of Movie objects
  * via MovieStorage
@@ -41,7 +42,7 @@ public class MovieStorageManager {
         genre = in.nextLine();
         Movie newMovie = new Movie(title, genre);
         movieList.addMovie(newMovie);
-        System.out.println(title + " has been added to available moveis.");
+        System.out.println(title + " has been added to available movies.");
     }
     
 }
