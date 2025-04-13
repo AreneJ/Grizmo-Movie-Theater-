@@ -1,0 +1,24 @@
+The Screen, ScreenManager, Seating, Showtime, ShowtimeManager, Staff, 
+StaffManager, Ticket and TicketParser classes were created by myself. I also
+created the CLI 'command-line interface' class for menu/submenu navigation 
+and appropriate method calls. 
+
+**NOTE: The CLI class does NOT appear in the UML diagram, it was far too
+cluttered to show each Class and method it handles, this was my decision.
+The CLI quasi-class contains some code that may be better attached to 
+a separate class or object - this was also my decision based on the
+assignment requirements and time constraints.**
+
+StaffManager is the new name for the 'Schedule' class planned in stages 1
+and 2; it handles shift scheduling by assigning staff objects to one of 
+three shifts, and is responsible for 'hiring' and 'firing' staff.
+Attempts to create a more focused ShiftManager class were unsuccessful
+given time constraints - Both ShiftManager and StaffManager needed
+to access to the same ArrayList<Staff> object. An inheritance relationship
+may have solved this issue, but problems persisted long enough that it
+was abandoned.
+
+My largest contribution (for good or bad) was building a chain of sorts
+from TicketParser to Seating, allowing for a seat to be associated with
+a screen on a particular day, at a particular hour; and all this
+to be included in Ticket object creation.
