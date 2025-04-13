@@ -1,11 +1,9 @@
-
 import java.util.Scanner;
-
 
 /**
  * This class acts as a sort of sentinel for the creation of Ticket objects.
  * It will perform checks to ensure the Ticket object is valid before it is
- * constructed.
+ * constructed. It holds the initialTicket Ticket object.
  * @author Andrew
  */
 public class TicketParser {
@@ -25,6 +23,12 @@ public class TicketParser {
     TicketParser() {     
     }
     
+    /**
+     * The initialTicket is a special Ticket object that provides access
+     * to the Ticket class's methods without the requirements of a 
+     * 'normal' Ticket object (movie, day/time, seat).
+     * @return the initialTicket Ticket object
+     */
     public Ticket getInitialTicket() {
         return initialTicket;
     }
