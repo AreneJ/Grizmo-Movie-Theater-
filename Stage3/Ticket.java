@@ -1,6 +1,10 @@
 
 /**
- *
+ * This class describes Ticket objects. Ticket objects hold information about
+ * the movie, showtime and seat they are associated with upon creation. An
+ * initialTicket object need not have this information (see TicketParser class
+ * documentation for initialTicket information).
+ * 
  * @author Andrew
  */
 public class Ticket {
@@ -37,14 +41,24 @@ public class Ticket {
     Ticket() {
     }
     
+    /**
+     * ScreenManager objects contain showtime and seating information.
+     * @return the ScreenManager object associated with the ticket
+     */
     public ScreenManager getScreenManager() {
         return screenManager;
     }
     
+    /**
+     * @return the MovieStorageManager object associated with the ticket
+     */
     public MovieStorageManager getMovieStorageManager() {
         return Ticket.movieStorageManager;
     }
     
+    /**
+     * @return the Movie object associated with the ticket
+     */
     public Movie getMovie() {
         return this.movie;
     }
