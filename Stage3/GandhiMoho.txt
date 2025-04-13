@@ -1,0 +1,13 @@
+Gandhi Report:
+
+I worked on the classes; Customer, ConcessionPayment, TicketPayment, Payment, Sales, Movie, and MovieStorage.
+
+I mainly handled the money side of the project and implimented principles of inheritence with the Payment, 
+TicketPayment, and ConcessionPayment as they are all Payments and use some of the same varibles and get Methods. 
+
+I wanted to implement a sales history for Customers to get their individual payment history, 
+but I wasn't confident to impliment it into the existing system as it was.
+
+If I was to implement a SalesHistory class I would create a HashMap for sales history and have a customer as the key with a Helper Storage class to have an arraylist of payments for each customer.  
+By inputing the name, it would iterate through each key to see which one has the right name, then display the payment history.  
+By proxy, a refund option could be introduced here to change the PaymentHistorys for each stored arraylist.
