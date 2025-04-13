@@ -6,14 +6,13 @@ import java.util.Scanner;
  * @author Andrew
  */
 public class CLI {
-    //variable declaration and instantiation
     boolean quitNow = false;
     int userSelection = 0;
     Scanner in = new Scanner(System.in);
     String invalid = "Invalid option.";
     String quitMsg = "Quitting...";
     
-    //object declaration and instantiation
+    //custom object declaration and instantiation
     StaffManager regularSchedule = new StaffManager();
     TicketParser ticketParser = new TicketParser();
     Ticket initialTicket = ticketParser.getInitialTicket();
@@ -198,23 +197,6 @@ public class CLI {
         salesObj.showPayments();
     }
     
-    public void displayTicketSales() {
-        
-        System.out.println("CLI.displayTicketSales() has been called.");
-    }
-    
-    public void createTicketSale() {
-        System.out.println("CLI.createTicketSale() has been called.");
-    }
-    
-    public void modifyTicketSale() {
-        System.out.println("CLI.modifyTicketSale() has been called.");
-    }
-    
-    public void deleteTicketSale() {
-        System.out.println("CLI.deleteTicketSale() has been called.");
-    }
-    
     public void buyTicket() {
         Customer purchaser;
         TicketPayment ticketPayment = new TicketPayment();
@@ -233,7 +215,7 @@ public class CLI {
         purchaser = new Customer(name);
         movieList.getMovieStorage().viewMovies();
         System.out.printf("Enter an integer indicating which movie you'd like%n"
-                + "to see (I.E. to view the second movie listed, enter 2)%n");
+                + "to see (I.E. to view the second movie listed, enter 2):%n");
         movieSelection = (integerIn.nextInt() - 1);
         
         movieToAdd = movieList.getMovieStorage().getMovies().get(movieSelection);
@@ -255,7 +237,7 @@ public class CLI {
             salesObj.addPayment(ticketPayment);
             System.out.println("Ticket purchased");
         }
-    }
+    } //buyTicket() close
     
     public void buyConcession() {
         Customer purchaser;
@@ -281,7 +263,7 @@ public class CLI {
             concessionPayment.buySoda(purchaser);
             salesObj.addPayment(concessionPayment);
         }
-    }
+    } //buyConcession() close
     
     public void displayEmployees() {
         regularSchedule.printStaff();
@@ -324,8 +306,8 @@ public class CLI {
         int userSelection;
         movieList.getMovieStorage().viewMovies();
         System.out.printf("Change a movie's playing status by entering%n"
-                + "its row number (entering 2 changes the playing status"
-                + "of the second movie listed)%n");
+                + "its row number (entering 2 changes the playing status "
+                + "of the second movie listed):%n");
         userSelection = (in.nextInt() - 1);
         movieList.getMovieStorage().getMovies().get(userSelection).
                 changePlaying();
@@ -354,7 +336,6 @@ public class CLI {
         time = showtimeIn.nextLine();
         showtimeManager.createShowtime(day, time);
     }
-    
     
     public void deleteShowtime() {
         Scanner showtimeIn = new Scanner(System.in);
