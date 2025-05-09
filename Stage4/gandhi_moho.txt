@@ -1,0 +1,16 @@
+I worked on the following GUIS and improved classes
+ConsessionPayment_GUI.java
+MovieStorageFrame.java
+Sales_GUI.java
+Report_GUI.java
+
+
+
+Movie.java
+MovieStorage.java
+Sales.java
+ConcessionPayment.java
+Payment.java
+
+I worked on the GUIS for my classes for stage 3 and managed to get information persisting between files and my classes to import it.  I worked with Andrew to transfer the read and writing that we learned in class to his to keep payment changes when they are created.  I also added more functionality to MovieStorage and Payments to read, create, update, remove everything needed for the GUIS that I made.
+
