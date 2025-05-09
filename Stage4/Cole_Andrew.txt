@@ -1,4 +1,6 @@
 I created the following new classes / GUIs and their components:
+AgeSearchGUI
+AgeSearchResultsGUI
 BuyTicketGUI
 CustomerActionsGUI
 EmployeeAddGUI
@@ -7,12 +9,12 @@ MainGUI
 ShiftsGUI - a 'popup'
 ShowtimeSeatsGUI
 
-I updated existing classes as needed to accommodate the GUI classes:
-CLI.java had a Sales object getter added, for example. This allowed
-the BuyTicketGUI (which uses a CLI object) to get and use the
-needed Sales object.  Most efforts went toward identifying where
-and how to implement persistent storage: in particular each showtime 
-object has an associated seating chart, and each seating chart is
+Most efforts went toward identifying where and how to implement 
+persistent storage: in particular each showtime object has an 
+associated seating chart, and each seating chart is
 independent, requiring a file for each seating chart.
 Ensuring the correct file is being read/written is largely what
-any new code does.
+any new code does. I created the 'search by age' functionality
+in the employee window to give some search function to the program
+as per the project requirements. Finally I created the userguide.pdf
+file.
